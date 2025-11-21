@@ -9,23 +9,31 @@
       font-family: "Times New Roman";
       text-align: center;
       padding-top: 10%;
-      color: black;
-      background-image: url("teaser_v001.jpg");
-      background-color: #cccccc; /* Used if the image is unavailable */
-      height: 2048px; /* You must set a specified height */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover; /* Resize the background image to cover the entire container */
+      color: white;
+      background-color: #cccccc; 
       /*
+      background-image: url("teaser_v001.jpg");
+      background-color: #cccccc; 
+      height: 2048px; 
+      background-position: center; 
+      background-repeat: no-repeat;
+      background-size: cover; 
+      
       Note, background can be composited
       background-image: url("LayerA.png"), url("LayerB.png");
       */
-      /*background: red;*/
+    }
+
+    #teaser{
+        position: absolute;
+        top: 0;
+        left: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
   <p>...coming soon</p>
-  <img src="teaser_v001.jpg" alt="My image">
+  <img id="teaser" src="teaser_v001.jpg" alt="My image">
 </body>
 </html>
